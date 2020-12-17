@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.nav-link > a{
+  color: white;
+}
+
+.nav-link > a:hover{
+  color: white;
+}
+
+.navbar{
+  width: 100%;
+  background-color: #dc3545 !important;
+}
+
+.slide{
+  max-width: 100%;
+}
+
+.footer{
+  height: 350px;
+  background-position-y: 50px;
+  background-repeat: no-repeat;
+}
