@@ -4,7 +4,7 @@ import './index.css';
 import App from './Component/App';
 import reportWebVitals from './reportWebVitals';
 import { Route, Link, BrowserRouter } from "react-router-dom";
-import {Motorcycle} from './Component/Motorcycle';
+import { Motorcycle } from './Component/Motorcycle';
 import { Scooter } from './Component/Scooter';
 import Tips from './Component/Tips';
 import Helpline from './Component/Helpline';
@@ -36,28 +36,28 @@ const routs = (
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                      <Nav className="mr-auto">
-                        <Nav.Link href="/"><Link to="/">About Us</Link></Nav.Link>
-                        <Nav.Link href="/motorcycle"><Link to="/motorcycle">Motorcycle</Link></Nav.Link>
-                        <Nav.Link href="/scooter"><Link to="/scooter">Scooter</Link></Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + '/'}><Link to="/">About Us</Link></Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + '/motorcycle'}><Link to="/motorcycle">Motorcycle</Link></Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + '/scooter'}><Link to="/scooter">Scooter</Link></Nav.Link>
                         <NavDropdown title="Book" id="basic-nav-dropdown">
-                           <NavDropdown.Item href="/testdrive"><Link to="/testdrive">Testdrive</Link></NavDropdown.Item>
-                           <NavDropdown.Item href="/service"><Link to="/service">Service</Link></NavDropdown.Item>
+                           <NavDropdown.Item href={process.env.PUBLIC_URL + '/testdrive'}><Link to="/testdrive">Testdrive</Link></NavDropdown.Item>
+                           <NavDropdown.Item href={process.env.PUBLIC_URL + '/service'}><Link to="/service">Service</Link></NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="/tips"><Link to="/tips">Tips</Link></Nav.Link>
-                        <Nav.Link href="/helpline"><Link to="/helpline">Helpline</Link></Nav.Link>
-                        <Nav.Link href="/contactus"><Link to="/contactus">Contact Us</Link></Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + '/tips'}><Link to="/tips">Tips</Link></Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + '/helpline'}><Link to="/helpline">Helpline</Link></Nav.Link>
+                        <Nav.Link href={process.env.PUBLIC_URL + '/contactus'}><Link to="/contactus">Contact Us</Link></Nav.Link>
                      </Nav>
                   </Navbar.Collapse>
                </Navbar>
             </Row>
-            <Route exact path="/" component={App} />
-            <Route path="/motorcycle" component={Motorcycle} />
-            <Route path="/scooter" component={Scooter} />
-            <Route path="/testdrive" component={Testdrive} />
-            <Route path="/service" component={Service} />
-            <Route path="/tips" component={Tips} />
-            <Route path="/helpline" component={Helpline} />
-            <Route path="/contactus" component={ContactUs} />
+            <Route exact path={process.env.PUBLIC_URL + '/'} component={App} />
+            <Route path={process.env.PUBLIC_URL + '/motorcycle'} component={Motorcycle} />
+            <Route path={process.env.PUBLIC_URL + '/scooter'} component={Scooter} />
+            <Route path={process.env.PUBLIC_URL + '/testdrive'} component={Testdrive} />
+            <Route path={process.env.PUBLIC_URL + '/service'} component={Service} />
+            <Route path={process.env.PUBLIC_URL + '/tips'} component={Tips} />
+            <Route path={process.env.PUBLIC_URL + '/helpline'} component={Helpline} />
+            <Route path={process.env.PUBLIC_URL + '/contactus'} component={ContactUs} />
             {/* <h3 style={{ marginLeft: '-15px', marginTop: '15px' }}>Quicklinks</h3> */}
             <Row>
                <Col>
@@ -66,13 +66,13 @@ const routs = (
             </Row>
             <Row style={{ marginTop: '15px', marginBottom: 15 }}>
                <Col className="text-center">
-                  <a className="footerLink" href="/tips" >Tips for you</a>
+                  <a className="footerLink" href={process.env.PUBLIC_URL + '/tips'} >Tips for you</a>
                </Col>
                <Col className="text-center">
-                  <a className="footerLink" href="/testdrive" >Book a test-drive</a>
+                  <a className="footerLink" href={process.env.PUBLIC_URL + '/testdrive'} >Book a test-drive</a>
                </Col>
                <Col className="text-center">
-                  <a className="footerLink" href="/service" >Book a service</a>
+                  <a className="footerLink" href={process.env.PUBLIC_URL + '/service'} >Book a service</a>
                </Col>
             </Row>
          </Container>
