@@ -1,4 +1,5 @@
 {
+  "homepage": "http://kunj-sangani.github.io/demositeforfivestar",
   "name": "fivestarhonda",
   "version": "0.1.0",
   "private": true,
@@ -9,11 +10,13 @@
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
+    "@types/react-datepicker": "^3.1.2",
     "@types/react-dom": "^17.0.0",
     "@types/react-router-dom": "^5.1.6",
     "bootstrap": "^4.5.3",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
+    "react-datepicker": "^3.3.0",
     "react-dom": "^17.0.1",
     "react-images": "1.1.0",
     "react-images-viewer": "^1.6.2",
@@ -24,6 +27,8 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -48,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@types/react-images": "0.5.3"
+    "@types/react-images": "0.5.3",
+    "gh-pages": "^3.1.0"
   }
 }

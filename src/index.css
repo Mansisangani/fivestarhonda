@@ -34,3 +34,48 @@ code {
   background-position-y: 50px;
   background-repeat: no-repeat;
 }
+
+a.nav-link.active > a {
+  font-weight: bold;
+}
+
+.nav-link{
+  color: #dc3545;
+}
+
+#basic-nav-dropdown{
+  color: white;
+}
+
+.dropdown-item > a {
+  color: black;
+}
+
+.dropdown-item.active{
+  background-color: white !important;
+  color: black !important;
+}
+
+.react-datepicker__input-container > input{
+  width: 100%;
+  border: 1px solid #ced4da;
+  height: 35px;
+}
+.react-datepicker-wrapper{
+  width: 100%;
+}
+.footerLink{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+  color: #dc3545;
+}
+
+.footerLink:hover{
+  color: black !important;
+}
+
+.list-group-item.active{
+  background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}
