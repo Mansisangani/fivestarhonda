@@ -79,3 +79,7 @@ a.nav-link.active > a {
   background-color: #dc3545 !important;
     border-color: #dc3545 !important;
 }
+
+.navbar-dark .navbar-nav .nav-link{
+  color: white !important;
+}

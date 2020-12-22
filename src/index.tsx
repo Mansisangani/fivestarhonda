@@ -9,7 +9,7 @@ import { Scooter } from './Component/Scooter';
 import Tips from './Component/Tips';
 import Helpline from './Component/Helpline';
 import ContactUs from './Component/ContactUs';
-import { Button, Col, Container, Nav, Navbar, NavDropdown, Row, Image } from 'react-bootstrap';
+import { Col, Container, Nav, Navbar, NavDropdown, Row, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Testdrive from './Component/Testdrive';
 import Service from './Component/Service';
@@ -36,16 +36,16 @@ const routs = (
                   <Navbar.Toggle aria-controls="basic-navbar-nav" />
                   <Navbar.Collapse id="basic-navbar-nav">
                      <Nav className="mr-auto">
-                        <Nav.Link href={process.env.PUBLIC_URL + '/'}><Link to="/">About Us</Link></Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + '/motorcycle'}><Link to="/motorcycle">Motorcycle</Link></Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + '/scooter'}><Link to="/scooter">Scooter</Link></Nav.Link>
-                        <NavDropdown title="Book" id="basic-nav-dropdown">
-                           <NavDropdown.Item href={process.env.PUBLIC_URL + '/testdrive'}><Link to="/testdrive">Testdrive</Link></NavDropdown.Item>
-                           <NavDropdown.Item href={process.env.PUBLIC_URL + '/service'}><Link to="/service">Service</Link></NavDropdown.Item>
-                        </NavDropdown>
-                        <Nav.Link href={process.env.PUBLIC_URL + '/tips'}><Link to="/tips">Tips</Link></Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + '/helpline'}><Link to="/helpline">Helpline</Link></Nav.Link>
-                        <Nav.Link href={process.env.PUBLIC_URL + '/contactus'}><Link to="/contactus">Contact Us</Link></Nav.Link>
+                        <Link to="/"><Nav.Link href={process.env.PUBLIC_URL + '/'}>About Us</Nav.Link></Link>
+                        <Link to="/motorcycle"><Nav.Link href={process.env.PUBLIC_URL + '/motorcycle'}>Motorcycle</Nav.Link></Link>
+                        <Link to="/scooter"><Nav.Link href={process.env.PUBLIC_URL + '/scooter'}>Scooter</Nav.Link></Link>
+                        <Link to="/"><NavDropdown title="Book" id="basic-nav-dropdown">
+                           <Link to="/testdrive"><NavDropdown.Item href={process.env.PUBLIC_URL + '/testdrive'}>Testdrive</NavDropdown.Item></Link>
+                           <Link to="/service"><NavDropdown.Item href={process.env.PUBLIC_URL + '/service'}>Service</NavDropdown.Item></Link>
+                        </NavDropdown></Link>
+                        <Link to="/tips"><Nav.Link href={process.env.PUBLIC_URL + '/tips'}>Tips</Nav.Link></Link>
+                        <Link to="/helpline"><Nav.Link href={process.env.PUBLIC_URL + '/helpline'}>Helpline</Nav.Link></Link>
+                        <Link to="/contactus"><Nav.Link href={process.env.PUBLIC_URL + '/contactus'}>Contact Us</Nav.Link></Link>
                      </Nav>
                   </Navbar.Collapse>
                </Navbar>
@@ -66,13 +66,13 @@ const routs = (
             </Row>
             <Row style={{ marginTop: '15px', marginBottom: 15 }}>
                <Col className="text-center">
-                  <a className="footerLink" href={process.env.PUBLIC_URL + '/tips'} >Tips for you</a>
+                  <Link to="/tips"><a className="footerLink" href={process.env.PUBLIC_URL + '/tips'} >Tips for you</a></Link>
                </Col>
                <Col className="text-center">
-                  <a className="footerLink" href={process.env.PUBLIC_URL + '/testdrive'} >Book a test-drive</a>
+                  <Link to="/testdrive"><a className="footerLink" href={process.env.PUBLIC_URL + '/testdrive'} >Book a test-drive</a></Link>
                </Col>
                <Col className="text-center">
-                  <a className="footerLink" href={process.env.PUBLIC_URL + '/service'} >Book a service</a>
+                  <Link to="/service"><a className="footerLink" href={process.env.PUBLIC_URL + '/service'} >Book a service</a></Link>
                </Col>
             </Row>
          </Container>

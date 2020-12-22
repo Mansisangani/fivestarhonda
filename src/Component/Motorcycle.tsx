@@ -1,13 +1,12 @@
 import * as React from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import Data from "../Data/Data";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ProdcutDetail from '../CommonComponent/ProductDetail';
 
 export interface IMotorcycleProps { }
 
 export const Motorcycle: React.FunctionComponent<IMotorcycleProps> = (props: React.PropsWithChildren<IMotorcycleProps>) => {
-  const [value, setValue] = React.useState('');
   const query = new URLSearchParams(useLocation().search);
   const motorId = query.get("id");
   const moterNumber = parseInt(motorId ? motorId : '0')
@@ -30,7 +29,7 @@ export const Motorcycle: React.FunctionComponent<IMotorcycleProps> = (props: Rea
               <Card.Img variant="top" src={val.ThumbnaiImage} />
               <Card.Body>
                 <Card.Title>{val.Name}</Card.Title>
-                <Button variant="danger" href={`?id=${val.Id}`}>Details</Button>
+                <Link to={`motorcycle?id=${val.Id}`}><Button variant="danger" href={`?id=${val.Id}`}>Details</Button></Link>
               </Card.Body>
             </Card>
             </Col>
