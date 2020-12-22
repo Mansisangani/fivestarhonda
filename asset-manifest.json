@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/fivestarhonda/static/css/main.093a3403.chunk.css",
+    "main.js": "/fivestarhonda/static/js/main.783d4a5e.chunk.js",
+    "main.js.map": "/fivestarhonda/static/js/main.783d4a5e.chunk.js.map",
+    "runtime-main.js": "/fivestarhonda/static/js/runtime-main.3edff1f5.js",
+    "runtime-main.js.map": "/fivestarhonda/static/js/runtime-main.3edff1f5.js.map",
+    "static/css/2.5ea8d6f0.chunk.css": "/fivestarhonda/static/css/2.5ea8d6f0.chunk.css",
+    "static/js/2.7f94b142.chunk.js": "/fivestarhonda/static/js/2.7f94b142.chunk.js",
+    "static/js/2.7f94b142.chunk.js.map": "/fivestarhonda/static/js/2.7f94b142.chunk.js.map",
+    "static/js/3.28d22e87.chunk.js": "/fivestarhonda/static/js/3.28d22e87.chunk.js",
+    "static/js/3.28d22e87.chunk.js.map": "/fivestarhonda/static/js/3.28d22e87.chunk.js.map",
+    "index.html": "/fivestarhonda/index.html",
+    "static/css/2.5ea8d6f0.chunk.css.map": "/fivestarhonda/static/css/2.5ea8d6f0.chunk.css.map",
+    "static/css/main.093a3403.chunk.css.map": "/fivestarhonda/static/css/main.093a3403.chunk.css.map",
+    "static/js/2.7f94b142.chunk.js.LICENSE.txt": "/fivestarhonda/static/js/2.7f94b142.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3edff1f5.js",
+    "static/css/2.5ea8d6f0.chunk.css",
+    "static/js/2.7f94b142.chunk.js",
+    "static/css/main.093a3403.chunk.css",
+    "static/js/main.783d4a5e.chunk.js"
+  ]
+}
