@@ -5,21 +5,21 @@ import { CustomImageGrid } from '../CommonComponent/CustomImageGrid';
 import CommonFunction from "../Data/CommonFunction";
 
 const galleryImages =
-  [{ src: `${process.env.PUBLIC_URL}/gridImage/h16.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h2.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h3.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h4.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h5.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h6.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h7.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h8.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h9.JPG` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h10.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h11.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h12.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h13.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h14.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` }
+  [{ src: `${process.env.PUBLIC_URL}/gridImage/h16.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h2.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h3.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h4.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h5.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h6.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h7.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h8.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h9.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h10.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h11.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h12.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h13.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h14.jpeg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpeg` }
   ];
 
 export interface IAppProps { }

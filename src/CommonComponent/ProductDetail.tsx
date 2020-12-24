@@ -118,7 +118,7 @@ export default class ProdcutDetail extends React.Component<IProdcutDetailProps, 
                                                     <Card.Img variant="top" style={{ height: 200 }} src={val.Image} />
                                                     <Card.Body>
                                                         <Card.Title>{val.Title}</Card.Title>
-                                                        <Card.Text>
+                                                        <Card.Text title={val.Detail}>
                                                             {val.Detail}
                                                         </Card.Text>
                                                     </Card.Body>

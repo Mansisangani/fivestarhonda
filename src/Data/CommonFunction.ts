@@ -2,7 +2,7 @@ export default class CommonFunction {
     public static sendEmail = (subject: string, content: string) => {
         var data = JSON.stringify({
             "personalizations":
-                [{ "to": [{ "email": "sangani.kunj@gmail.com" }] }],
+                [{ "to": [{ "email": "fivestarhonda@yahoo.com" }] }],
             "from": { "email": "kunj@testinglala.onmicrosoft.com" },
             "subject": `${subject}`,
             "content": [{
