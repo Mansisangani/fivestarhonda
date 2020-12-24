@@ -81,7 +81,7 @@ export default class ContactUs extends React.Component<IContactUsProps, IContact
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.0606502060855!2d70.46200221458733!3d21.544483675348584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395803c3f7517a33%3A0x4ffb043daa9185e8!2sFive%20Star%20Honda!5e0!3m2!1sen!2sin!4v1608369863047!5m2!1sen!2sin" width="360" height="360" ></iframe>
           <div style={{ lineHeight: 1 }}>
             <div>Five Star Honda</div>
-            <div>Opp. Majewadi Gate,</div>
+            <div>Os. Majewadi Gate,</div>
             <div>Rajkot Road</div>
             <div>Junagadh - 362001</div>
             <div>Phone. 0285-2627623</div>

@@ -6,7 +6,7 @@ export default class CommonFunction {
             "from": { "email": "kunj@testinglala.onmicrosoft.com" },
             "subject": `${subject}`,
             "content": [{
-                "type": "text/plain",
+                "type": "text/html",
                 "value": `${content}`
             }]
         });

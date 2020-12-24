@@ -1,18 +1,24 @@
 import * as React from 'react';
-import { Button, Card, Col, Form, Row } from 'react-bootstrap';
+import { Button, Card, Col, Form, Row, Toast } from 'react-bootstrap';
 import CustomCarousel from '../CommonComponent/CustomCarousel';
 import { CustomImageGrid } from '../CommonComponent/CustomImageGrid';
 import CommonFunction from "../Data/CommonFunction";
 
 const galleryImages =
-  [{ src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
-  { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` },
+  [{ src: `${process.env.PUBLIC_URL}/gridImage/h16.jpg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h2.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h3.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h4.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h5.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h6.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h7.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h8.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h9.JPG` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h10.jpg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h11.jpg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h12.jpg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h13.jpg` },
+  { src: `${process.env.PUBLIC_URL}/gridImage/h14.jpg` },
   { src: `${process.env.PUBLIC_URL}/gridImage/h1.jpg` }
   ];
 
@@ -22,6 +28,7 @@ export interface IAppState {
   imageArray: any[];
   currImg: any;
   viewerIsOpen: boolean;
+  toastVisible: boolean;
 }
 
 export default class App extends React.Component<IAppProps, IAppState> {
@@ -37,13 +44,42 @@ export default class App extends React.Component<IAppProps, IAppState> {
       `${process.env.PUBLIC_URL}/carouselImage/06.jpg`,
       `${process.env.PUBLIC_URL}/carouselImage/07.jpg`],
       viewerIsOpen: false,
-      currImg: 0
+      currImg: 0,
+      toastVisible: false
     };
   }
 
   private submit = (ev: React.FormEvent<HTMLFormElement>) => {
     ev.preventDefault();
-    CommonFunction.sendEmail("Request for call", "Testing");
+    let finalStructure = `<table><tbody>`;
+    for (let index = 0; index < ev.currentTarget.length - 1; index++) {
+      let element = ev.currentTarget[index] as HTMLFormElement
+      let placeholder = element['placeholder'];
+      if (index === 4) {
+        placeholder = "Enquiry for";
+      }
+      let elementvalue = element['value'];
+      finalStructure += `<tr><td>${placeholder}</td><td>${elementvalue}</td></tr>`
+    }
+    finalStructure += `</tbody></table>`;
+    CommonFunction.sendEmail("Request for call", finalStructure);
+    Array.from(document.querySelectorAll("input")).forEach(
+      input => (input.value = "")
+    );
+    this.setState({
+      toastVisible: true
+    });
+    setTimeout(() => {
+      this.setState({
+        toastVisible: false
+      });
+    }, 60000);
+  }
+
+  private toggletoast = () => {
+    this.setState({
+      toastVisible: false
+    });
   }
 
   private openImgsViewer = (index: any) => {
@@ -98,7 +134,7 @@ export default class App extends React.Component<IAppProps, IAppState> {
               </Form.Group>
               <Form.Group controlId="formEnquiryFor">
                 <Form.Label>Enquiry for</Form.Label>
-                <Form.Control as="select">
+                <Form.Control as="select" placeholder="Enquiry for">
                   <option>Sales</option>
                   <option>Service</option>
                   <option>Finance</option>
@@ -126,6 +162,12 @@ export default class App extends React.Component<IAppProps, IAppState> {
             ></CustomImageGrid>
           </Col>
         </Row>
+        <Toast show={this.state.toastVisible} onClose={this.toggletoast}>
+          <Toast.Header>
+            <strong className="mr-auto">Thank you for Enquiry</strong>
+          </Toast.Header>
+          <Toast.Body>We have received your enquiry and we will call you as soon as possible. Thank you !!!</Toast.Body>
+        </Toast>
       </div>
     );
   }

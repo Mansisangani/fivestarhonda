@@ -16,27 +16,27 @@ export default class Helpline extends React.Component<IHelplineProps, IHelplineS
       allHelLine: [{
         name: 'Sales',
         img: `${process.env.PUBLIC_URL}/helpline/Sales.jpeg`,
-        text: '9723300024 , 7211103401/02/03/04'
+        text: '7043419500'
       }, {
-        name: 'Breakdown helpline number',
-        img: `${process.env.PUBLIC_URL}/helpline/breakdown.jpeg`,
-        text: '	9574900024 , 7211103406'
+        name: 'Services',
+        img: `${process.env.PUBLIC_URL}/helpline/services.png`,
+        text: '	9825247891 , 0285- 2658888 , 0285-2627623'
       }, {
         name: 'Insurance Renewal',
         img: `${process.env.PUBLIC_URL}/helpline/insurance.jpeg`,
-        text: '	7211103410'
+        text: '	7043674004'
       }, {
         name: 'Accident helpline number',
         img: `${process.env.PUBLIC_URL}/helpline/accident.jpeg`,
-        text: '7211103412'
+        text: '9825247891'
       }, {
         name: 'RTO Agent',
         img: `${process.env.PUBLIC_URL}/helpline/rto.png`,
-        text: '9978964640/2'
+        text: '9825248441'
       }, {
         name: 'For General Inquiry',
         img: `${process.env.PUBLIC_URL}/fivestart-logo.png`,
-        text: '	7211134824'
+        text: '	0285 - 2627623'
       }]
     };
   }

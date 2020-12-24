@@ -78,7 +78,7 @@ export default class Data {
                 FrameSuspension: [{ Key: 'Frame type', value: 'Diamond Type' }],
                 Electricals: [{ Key: 'Battery', value: '12V, 5.0Ah' }]
             },
-            Photos: [{ src: `${process.env.PUBLIC_URL}/shine/black.png` }, { src: `${process.env.PUBLIC_URL}/shine/grey.png` }, { src: `${process.env.PUBLIC_URL}/shine/blue.png` }, { src: `${process.env.PUBLIC_URL}/shine/red.png` }],
+            Photos: [{ src: `${process.env.PUBLIC_URL}/allcolors/shine/black.png` }, { src: `${process.env.PUBLIC_URL}/allcolors/shine/grey.png` }, { src: `${process.env.PUBLIC_URL}/allcolors/shine/blue.png` }, { src: `${process.env.PUBLIC_URL}/allcolors/shine/red.png` }],
             Ebrochure: 'https://honda2wheelersindia.com/assets/pdf/ShineBS6Brochure.pdf'
         },
         {
@@ -133,7 +133,10 @@ export default class Data {
                 FrameSuspension: [{ Key: 'Frame type', value: 'Diamond Type' }],
                 Electricals: [{ Key: 'Battery', value: '12V, 5.0Ah' }]
             },
-            Photos: [],
+            Photos: [{ src: `${process.env.PUBLIC_URL}/allcolors/SP125/IMPERIAL_RED_METALLIC.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/SP125/MATTE_AXIS_GREY_METALLIC.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/SP125/PEARL_SIREN_BLUE.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/SP125/STRIKING_GREEN.png` }],
             Ebrochure: 'https://honda2wheelersindia.com/assets/pdf/ShineBS6Brochure.pdf'
         }, {
             Id: 3,
@@ -187,7 +190,10 @@ export default class Data {
                 FrameSuspension: [{ Key: 'Frame type', value: 'Diamond Type' }],
                 Electricals: [{ Key: 'Battery', value: '12V, 5.0Ah' }]
             },
-            Photos: [],
+            Photos: [{ src: `${process.env.PUBLIC_URL}/allcolors/cd110/Athletic-Blue-Metallic-Deluxe.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/cd110/Black-Deluxe.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/cd110/Geny-Grey-Metallic-Deluxe.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/cd110/Imperial-Red-Metallic-Deluxe.png` }],
             Ebrochure: 'https://honda2wheelersindia.com/assets/pdf/ShineBS6Brochure.pdf'
         }, {
             Id: 4,
@@ -241,7 +247,9 @@ export default class Data {
                 FrameSuspension: [{ Key: 'Frame type', value: 'Diamond Type' }],
                 Electricals: [{ Key: 'Battery', value: '12V, 5.0Ah' }]
             },
-            Photos: [],
+            Photos: [{ src: `${process.env.PUBLIC_URL}/allcolors/unicorn/unicornBS6-black.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/unicorn/unicornBS6-Gray.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/unicorn/unicornBS6-Red.png` }],
             Ebrochure: 'https://honda2wheelersindia.com/assets/pdf/ShineBS6Brochure.pdf'
         }, {
             Id: 5,
@@ -347,10 +355,10 @@ export default class Data {
                 Electricals: [{ Key: 'Battery', value: '12V, 5Ah' },
                 { Key: 'Headlamp', value: 'Halogen Bulb, DC' }]
             },
-            Photos: [{ src: `${process.env.PUBLIC_URL}/livoBS6/Athletic-Blue-Metallic.png` },
-            { src: `${process.env.PUBLIC_URL}/livoBS6/Black.png` },
-            { src: `${process.env.PUBLIC_URL}/livoBS6/Imperial-Red-Metallic.png` },
-            { src: `${process.env.PUBLIC_URL}/livoBS6/Matte-Axis-Grey-Metallic.png` }],
+            Photos: [{ src: `${process.env.PUBLIC_URL}/allcolors/livoBS6/Athletic-Blue-Metallic.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/livoBS6/Black.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/livoBS6/Imperial-Red-Metallic.png` },
+            { src: `${process.env.PUBLIC_URL}/allcolors/livoBS6/Matte-Axis-Grey-Metallic.png` }],
             Ebrochure: 'https://honda2wheelersindia.com/assets/pdf/LivoBS6_Brochure.pdf'
         }, {
             Id: 6,

@@ -80,7 +80,7 @@ Before driving your vehicle assess the level of damage done to the vehicle, call
                         <div style={{ marginTop: 15 }}>
                             <b>All about Insurance</b>
                             <p>vehical insurance is one of the most important aspects of owning a vehical.
-                                For procuring an insurance for your new vehicle or renewing your insurance please contact Insurance department at <b> 7211103410 </b> or you can write to us at <a href="mailto:contact@sidsmotors.com">contact@sidsmototrs.com</a></p>
+                                For procuring an insurance for your new vehicle or renewing your insurance please contact Insurance department at <b> 7043674004 </b> or you can write to us at <a href="mailto:fivestarhonda@yahoo.com">fivestarhonda@yahoo.com</a></p>
                             <b>
                             </b>
                         </div>
