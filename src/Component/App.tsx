@@ -37,9 +37,9 @@ export default class App extends React.Component<IAppProps, IAppState> {
     super(props);
     this.state = {
       imageArray: [`${process.env.PUBLIC_URL}/carouselImage/01.jpg`
-        , `${process.env.PUBLIC_URL}/carouselImage/02.jpg`,
-      `${process.env.PUBLIC_URL}/carouselImage/03.jpg`,
-      `${process.env.PUBLIC_URL}/carouselImage/04.jpg`,
+        , `${process.env.PUBLIC_URL}/carouselImage/11.jpeg`,
+      `${process.env.PUBLIC_URL}/carouselImage/10.jpeg`,
+      `${process.env.PUBLIC_URL}/carouselImage/09.jpeg`,
       `${process.env.PUBLIC_URL}/carouselImage/05.jpg`,
       `${process.env.PUBLIC_URL}/carouselImage/06.jpg`,
       `${process.env.PUBLIC_URL}/carouselImage/07.jpg`],
